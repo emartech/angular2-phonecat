@@ -1,0 +1,11 @@
+<div class="thumbnail">
+    <a class="thumbnail-image" [routerLink]="['/PhoneApp', { phoneId: phone.id }]">
+        <img class="img-responsive" [src]="phone.imageUrl" alt="">
+    </a>
+    <div class="caption" style="height: 180px">
+        <a [routerLink]="['phone', phone.id ]">
+            <h3>{{ phone.name }}</h3>
+        </a>
+        <p>{{ phone.snippet | shortDescription }}</p>
+    </div>
+</div>

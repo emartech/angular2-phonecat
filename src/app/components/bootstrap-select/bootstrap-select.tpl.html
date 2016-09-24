@@ -1,0 +1,13 @@
+<div class="btn-group" [class.open]="isOpened">
+    <button type="button" class="btn btn-default dropdown-toggle" (click)="toggle()">
+        {{ displaySelectedOption() }} <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a (click)="select()">Select all</a></li>
+        <li *ngFor="let option of options">
+            <a (click)="select(option)">
+                {{ option }}
+            </a>
+        </li>
+    </ul>
+</div>

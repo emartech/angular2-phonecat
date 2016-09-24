@@ -1,0 +1,63 @@
+{
+  "name": "angular2-phonecat",
+  "version": "1.0.0",
+  "description": "Angular 2 port of the original Angular Phonecat application with Webpack",
+  "main": "client/app/main.js",
+  "scripts": {
+    "build": "webpack",
+    "deploy": "gh-pages -d dist",
+    "start": "webpack-dev-server"
+  },
+  "author": {
+    "name": "blacksonic",
+    "email": "soos.gabor86@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emartech/angular2-phonecat.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular2",
+    "typescript",
+    "webpack"
+  ],
+  "dependencies": {
+    "@angular/common": "2.0.1",
+    "@angular/compiler": "2.0.1",
+    "@angular/compiler-cli": "0.6.3",
+    "@angular/core": "2.0.1",
+    "@angular/forms": "2.0.1",
+    "@angular/http": "2.0.1",
+    "@angular/platform-browser": "2.0.1",
+    "@angular/platform-browser-dynamic": "2.0.1",
+    "@angular/platform-server": "2.0.1",
+    "@angular/router": "3.0.1",
+    "bootstrap": "3.3.7",
+    "core-js": "2.4.1",
+    "font-awesome": "4.6.3",
+    "rxjs": "5.0.0-beta.12",
+    "ts-helpers": "1.1.1",
+    "zone.js": "0.6.25"
+  },
+  "devDependencies": {
+    "@types/core-js": "0.9.34",
+    "@types/node": "6.0.41",
+    "angular2-template-loader": "0.5.0",
+    "awesome-typescript-loader": "2.2.4",
+    "copy-webpack-plugin": "3.0.1",
+    "css-loader": "0.25.0",
+    "extract-text-webpack-plugin": "1.0.1",
+    "file-loader": "0.9.0",
+    "gh-pages": "0.11.0",
+    "html-loader": "0.4.4",
+    "progress-bar-webpack-plugin": "1.9.0",
+    "raw-loader": "0.5.1",
+    "style-loader": "0.13.1",
+    "typescript": "2.0.3",
+    "url-loader": "0.5.7",
+    "webpack": "1.13.2",
+    "webpack-dev-server": "1.16.1",
+    "webpack-merge": "0.14.1"
+  }
+}
