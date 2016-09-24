@@ -18,6 +18,9 @@ It consists of 3 different entry points.
 - ```src/app/vendor.ts``` is where the third party libraries reside like angular itself
 - ```src/app/styles.ts``` consists of required stylesheets for the pretty display
 
+Templates are given with ```templateUrl``` and required at transpile time with the help of ```angular2-template-loader```.
+It gives the ability to be used with AOT (Ahead of Time Compilation).
+
 ### Getting started
 
 ```bash
