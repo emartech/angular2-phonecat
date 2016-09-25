@@ -11,7 +11,8 @@
     "strictNullChecks": false,
     "types": [
       "node",
-      "core-js"
+      "core-js",
+      "jasmine"
     ]
   },
   "angularCompilerOptions": {
