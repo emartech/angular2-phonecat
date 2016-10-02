@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+import './polyfill';
+
 import { AppComponent } from './components/app/app.component';
 import { PROVIDERS } from './services';
 import { PIPES } from './pipes';

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { PhoneModel } from '../../models/phone.model';
 
 @Component({
   selector: 'list-item',
@@ -7,5 +8,5 @@ import { Component, Input } from '@angular/core';
 export class PhoneListItemComponent {
 
   @Input()
-  phone;
+  phone: PhoneModel;
 }

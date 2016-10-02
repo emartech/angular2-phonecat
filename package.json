@@ -4,10 +4,12 @@
   "description": "Angular 2 port of the original Angular Phonecat application with Webpack",
   "main": "client/app/main.js",
   "scripts": {
+    "aot": "ngc -p ./tsconfig.aot.json",
     "build": "webpack",
     "deploy": "gh-pages -d dist",
     "lint": "tslint \"src/**/*.ts\"",
     "start": "webpack-dev-server",
+    "start-prod": "http-server ./dist -p 3000",
     "test": "karma start",
     "test-watch": "karma start"
   },
@@ -56,6 +58,7 @@
     "file-loader": "0.9.0",
     "gh-pages": "0.11.0",
     "html-loader": "0.4.4",
+    "http-server": "0.9.0",
     "jasmine-core": "2.5.2",
     "karma": "1.3.0",
     "karma-jasmine": "1.0.2",

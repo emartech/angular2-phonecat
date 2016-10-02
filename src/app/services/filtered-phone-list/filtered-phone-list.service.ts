@@ -54,6 +54,6 @@ export class FilteredPhoneListService {
   }
 
   _filterCarrier(phone) {
-    return !this.selectedCarrier || phone.carrier.toLowerCase() == this.selectedCarrier.toLowerCase();
+    return !this.selectedCarrier || phone.carrier.toLowerCase() === this.selectedCarrier.toLowerCase();
   }
 }

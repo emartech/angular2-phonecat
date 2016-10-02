@@ -5,7 +5,7 @@ const MAX_LENGTH = 100;
   name: 'shortDescription'
 })
 export class ShortDescriptionPipe implements PipeTransform {
-  transform(input, length) {
+  transform(input: String, length: Number) {
     length = this._calculateLength(length);
 
     if (this._inputExceedsLimit(input, length)) {
