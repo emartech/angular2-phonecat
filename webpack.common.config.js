@@ -23,6 +23,11 @@ module.exports = {
         ]
       },
       {
+        test: /\.ts$/,
+        enforce: 'pre',
+        loader: 'tslint'
+      },
+      {
         test: /\.js$/,
         loader: 'source-map',
         exclude: [
@@ -31,8 +36,8 @@ module.exports = {
         ]
       },
       { test: /\.html$/, loader: 'html?attrs=false&caseSensitive&removeAttributeQuotes=false' },
-      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader?limit=10000&mimetype=application/font-woff' },
-      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file-loader' }
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url?limit=10000&mimetype=application/font-woff' },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file' }
     ]
   },
 
