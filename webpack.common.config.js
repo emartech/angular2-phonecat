@@ -1,19 +1,23 @@
 'use strict';
+let webpack = require('webpack');
 let path = require('path');
 
 module.exports = {
   context: path.join(process.cwd(), 'src'),
 
   resolve: {
-    root: [ path.join(process.cwd(), 'src') ],
-    extensions: ['', '.ts', '.js', '.json']
+    modules: [
+      path.join(__dirname, 'src'),
+      'node_modules'
+    ],
+    extensions: ['.ts', '.js', '.json']
   },
 
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.ts/,
-        loaders: [
+        use: [
           'awesome-typescript',
           'angular2-template'
         ]
@@ -27,10 +31,19 @@ module.exports = {
         ]
       },
       { test: /\.html$/, loader: 'html?attrs=false&caseSensitive&removeAttributeQuotes=false' },
-      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
-      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader?limit=10000&mimetype=application/font-woff' },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file-loader' }
     ]
   },
+
+  plugins: [
+    new webpack.ProgressPlugin(),
+    new webpack.ContextReplacementPlugin(
+      // The (\\|\/) piece accounts for path separators in *nix and Windows
+      /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
+      path.join(process.cwd(), 'src')
+    )
+  ],
 
   stats: {
     errorDetails: true,
@@ -40,7 +53,7 @@ module.exports = {
   },
 
   node: {
-    global: 'window',
+    global: true,
     crypto: 'empty',
     process: true,
     module: false,
