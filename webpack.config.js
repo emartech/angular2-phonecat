@@ -36,12 +36,26 @@ if (npmLifecycleEvent == 'build' || environment == 'production') {
     plugins: commonPlugins.concat([
       new webpack.LoaderOptionsPlugin({
         debug: false,
-        minimize: true
+        minimize: true,
+        htmlLoader: {
+          attrs: false,
+          minimize: true,
+          removeAttributeQuotes: false,
+          caseSensitive: true,
+          customAttrSurround: [
+            [/#/, /(?:)/],
+            [/\*/, /(?:)/],
+            [/\[?\(?/, /(?:)/]
+          ],
+          customAttrAssign: [/\)?\]?=/]
+        }
       }),
       // new webpack.optimize.DedupePlugin(), #issue https://github.com/webpack/webpack/issues/2644
       new webpack.optimize.UglifyJsPlugin({
         sourceMap: true,
+        mangle: { screw_ie8 : true },
         compress: {
+          screw_ie8: true,
           warnings: false
         }
       }),
@@ -64,7 +78,10 @@ if (npmLifecycleEvent == 'build' || environment == 'production') {
     plugins: [
       new webpack.LoaderOptionsPlugin({
         debug: true,
-        minimize: false
+        minimize: false,
+        htmlLoader: {
+          attrs: false
+        }
       })
     ],
 
@@ -78,7 +95,10 @@ if (npmLifecycleEvent == 'build' || environment == 'production') {
     plugins: commonPlugins.concat([
       new webpack.LoaderOptionsPlugin({
         debug: true,
-        minimize: false
+        minimize: false,
+        htmlLoader: {
+          attrs: false
+        }
       })
     ]),
 
