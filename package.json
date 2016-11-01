@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "angular2-config-generator": "github:blacksonic/angular2-config-generator",
-    "http-server": "0.9.0"
+    "http-server": "0.9.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }
