@@ -5,7 +5,7 @@
   "main": "src/app/main.js",
   "scripts": {
     "build": "webpack",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-deploy",
     "lint": "tslint \"src/**/*.ts\"",
     "start": "webpack-dev-server",
     "start-prod": "http-server ./dist -p 3000",
@@ -32,7 +32,7 @@
     "font-awesome": "4.7.0"
   },
   "devDependencies": {
-    "angular2-config-generator": "1.0.2",
+    "angular2-config-generator": "1.0.5",
     "http-server": "0.9.0"
   }
 }
