@@ -4,13 +4,13 @@
   "description": "Angular 2 port of the original Angular Phonecat application with Webpack",
   "main": "src/app/main.js",
   "scripts": {
-    "build": "webpack",
-    "deploy": "gh-deploy",
+    "build": "ng-build",
+    "deploy": "ng-deploy",
     "lint": "tslint \"src/**/*.ts\"",
-    "start": "webpack-dev-server",
+    "start": "ng-start",
     "start-prod": "http-server ./dist -p 3000",
-    "test": "karma start",
-    "test-watch": "karma start"
+    "test": "ng-test",
+    "test-watch": "ng-test --watch"
   },
   "author": {
     "name": "blacksonic",
@@ -27,12 +27,12 @@
     "webpack"
   ],
   "dependencies": {
-    "angular2-bundle": "2.1.2",
+    "angular2-bundle": "2.1.4",
     "bootstrap": "3.3.7",
     "font-awesome": "4.7.0"
   },
   "devDependencies": {
-    "angular2-config-generator": "1.0.5",
+    "angular2-config-generator": "2.0.0",
     "http-server": "0.9.0"
   }
 }
