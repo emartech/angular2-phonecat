@@ -1,4 +1,7 @@
-node_modules
 .idea
+node_modules
 dist
-tmp
+build
+*.ngfactory.ts
+*.ngstyle.ts
+*.ngsummary.json
