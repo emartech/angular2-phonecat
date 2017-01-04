@@ -30,4 +30,4 @@ npm i
 npm start
 ```
 
-Now the application is running, open your browser and visit the link ```http://localhost:3000```.
+Now the application is running, open your browser and visit the link ```http://localhost:4000```.
