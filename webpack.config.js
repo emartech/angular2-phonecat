@@ -9,3 +9,8 @@ module.exports = require('ngx-webpack').webpack({
     { from: 'img', to: 'img' }
   ]
 });
+
+module.exports.module.rules.push({
+  test: /\.(jpg|png|gif|png)$/,
+  use: 'file-loader'
+});

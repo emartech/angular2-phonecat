@@ -8,7 +8,7 @@ import { CarrierRepositoryService } from '../../services/carrier-repository/carr
 })
 export class CarrierSelectComponent {
 
-  public carriers: Array<any>;
+  public carriers: any[];
 
   @Output()
   onSelect = new EventEmitter();

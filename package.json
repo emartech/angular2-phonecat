@@ -8,7 +8,7 @@
     "deploy": "ng-deploy",
     "lint": "tslint \"src/**/*.ts\"",
     "start": "ng-start",
-    "start-prod": "http-server ./dist -p 3000",
+    "start-prod": "http-server ./dist -p 4000",
     "test": "ng-test",
     "test-watch": "ng-test --watch"
   },
@@ -27,24 +27,24 @@
     "webpack"
   ],
   "dependencies": {
-    "@angular/common": "2.4.1",
-    "@angular/compiler": "2.4.1",
-    "@angular/compiler-cli": "2.4.1",
-    "@angular/core": "2.4.1",
-    "@angular/forms": "2.4.1",
-    "@angular/http": "2.4.1",
-    "@angular/platform-browser": "2.4.1",
-    "@angular/platform-browser-dynamic": "2.4.1",
-    "@angular/platform-server": "2.4.1",
-    "@angular/router": "3.4.1",
+    "@angular/common": "2.4.3",
+    "@angular/compiler": "2.4.3",
+    "@angular/compiler-cli": "2.4.3",
+    "@angular/core": "2.4.3",
+    "@angular/forms": "2.4.3",
+    "@angular/http": "2.4.3",
+    "@angular/platform-browser": "2.4.3",
+    "@angular/platform-browser-dynamic": "2.4.3",
+    "@angular/platform-server": "2.4.3",
+    "@angular/router": "3.4.3",
     "bootstrap": "3.3.7",
     "core-js": "2.4.1",
     "font-awesome": "4.7.0",
-    "rxjs": "5.0.2",
-    "zone.js": "0.7.4"
+    "rxjs": "5.0.3",
+    "zone.js": "0.7.5"
   },
   "devDependencies": {
-    "ngx-webpack": "3.0.0",
+    "ngx-webpack": "3.2.1",
     "http-server": "0.9.0"
   }
 }

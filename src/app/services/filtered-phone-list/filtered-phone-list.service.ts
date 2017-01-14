@@ -5,8 +5,8 @@ import { PhoneRepositoryService } from '../phone-repository/phone-repository.ser
 @Injectable()
 export class FilteredPhoneListService {
 
-  private phones: Array<any>;
-  private allPhones: Array<any>;
+  private phones: any[];
+  private allPhones: any[];
   private searchText: String;
   private selectedCarrier: String;
 
