@@ -1,5 +1,4 @@
 import './polyfill';
-import './style';
 
 import '@angular/platform-browser-dynamic';
 import '@angular/platform-browser';
