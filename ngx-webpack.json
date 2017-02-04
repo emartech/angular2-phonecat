@@ -5,5 +5,13 @@
     { "from": "favicon.ico" },
     { "from": "api", "to": "api" },
     { "from": "img", "to": "img" }
+  ],
+  "vendors": [
+    "@angular/common",
+    "@angular/core",
+    "@angular/platform-browser",
+    "@angular/http",
+    "@angular/forms",
+    "@angular/router"
   ]
 }
