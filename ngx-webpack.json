@@ -1,0 +1,9 @@
+{
+  "port": 4000,
+  "aot": true,
+  "staticFiles": [
+    { "from": "favicon.ico" },
+    { "from": "api", "to": "api" },
+    { "from": "img", "to": "img" }
+  ]
+}

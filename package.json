@@ -5,10 +5,10 @@
   "main": "src/app/main.js",
   "scripts": {
     "postinstall": "ng-install",
-    "build": "ng-build --aot",
+    "build": "ng-build",
     "deploy": "ng-deploy",
     "lint": "ng-lint",
-    "start": "ng-start --aot",
+    "start": "ng-start",
     "start-prod": "http-server ./dist -p 4000",
     "test": "ng-test",
     "test-watch": "ng-test --watch"
@@ -45,7 +45,7 @@
     "zone.js": "0.7.6"
   },
   "devDependencies": {
-    "ngx-webpack": "3.3.0",
+    "ngx-webpack": "3.4.1",
     "http-server": "0.9.0"
   }
 }

@@ -6,5 +6,5 @@ import { Component, Inject } from '@angular/core';
 })
 export class CopyrightComponent {
 
-  constructor(@Inject('ACTUAL_YEAR') public actualYear) {}
+  constructor(@Inject('ACTUAL_YEAR') public actualYear: any) {}
 }
