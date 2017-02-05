@@ -1,6 +1,11 @@
 {
   "port": 4000,
   "aot": true,
+  "styleFormat": "css",
+  "templateFormat": "html",
+  "useDlls": true,
+  "liveReload": true,
+  "indexHtml": true,
   "staticFiles": [
     { "from": "favicon.ico" },
     { "from": "api", "to": "api" },
