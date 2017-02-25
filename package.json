@@ -45,7 +45,7 @@
     "zone.js": "0.7.7"
   },
   "devDependencies": {
-    "ngx-webpack": "3.7.4",
+    "ngx-webpack": "3.7.5",
     "http-server": "0.9.0"
   }
 }

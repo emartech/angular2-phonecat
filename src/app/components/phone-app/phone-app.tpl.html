@@ -6,7 +6,7 @@
 
 <div class="row">
     <div class="col-md-5" *ngIf="phone.images.length">
-        <img class="img-responsive" [src]="phone.images[0]" alt="">
+        <img class="img-responsive" [src]="'assets/' + phone.images[0]" alt="">
     </div>
     <div class="col-md-7">
         <p>{{ phone.description }}</p>
@@ -42,7 +42,7 @@
     </div>
 
     <div class="col-sm-3 col-xs-6" *ngFor="let image of phone.images">
-        <img class="img-responsive img-related" [src]="image" alt="">
+        <img class="img-responsive img-related" [src]="'assets/' + image" alt="">
     </div>
 </div>
 

@@ -8,13 +8,13 @@ export class PhoneRepositoryService {
 
   getOne(phoneId) {
     return this.http
-      .get(`api/${phoneId}.json`).toPromise()
+      .get(`assets/api/${phoneId}.json`).toPromise()
       .then((response) => response.json());
   }
 
   getAll() {
     return this.http
-      .get('api/phones.json').toPromise()
+      .get('assets/api/phones.json').toPromise()
       .then((response) => response.json());
   }
 }

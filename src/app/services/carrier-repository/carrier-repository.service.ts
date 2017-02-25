@@ -8,7 +8,7 @@ export class CarrierRepositoryService {
 
   getAll() {
     return this.http
-      .get('api/carriers.json').toPromise()
+      .get('assets/api/carriers.json').toPromise()
       .then((response) => response.json());
   }
 }

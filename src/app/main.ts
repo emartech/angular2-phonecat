@@ -1,6 +1,6 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
-import '../style/app.css';
+import '../styles/app.css';
 
 import { MainModule } from './modules/main.module';
 

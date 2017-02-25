@@ -1,6 +1,6 @@
 <div class="thumbnail">
     <a class="thumbnail-image" [routerLink]="['phone', phone.id]">
-        <img class="img-responsive" [src]="phone.imageUrl" alt="">
+        <img class="img-responsive" [src]="'assets/' + phone.imageUrl" alt="">
     </a>
     <div class="caption" style="height: 180px">
         <a [routerLink]="['phone', phone.id]">
