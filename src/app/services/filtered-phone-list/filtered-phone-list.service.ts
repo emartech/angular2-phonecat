@@ -7,8 +7,8 @@ export class FilteredPhoneListService {
 
   private phones: any[];
   private allPhones: any[];
-  private searchText: String;
-  private selectedCarrier: String;
+  private searchText: string;
+  private selectedCarrier: string;
 
   constructor(private phoneRepository: PhoneRepositoryService) {
     this.phoneRepository = phoneRepository;

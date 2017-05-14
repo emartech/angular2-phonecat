@@ -3,7 +3,7 @@
         {{ displaySelectedOption() }} <span class="caret"></span>
     </button>
     <ul class="dropdown-menu">
-        <li><a (click)="select()">Select all</a></li>
+        <li><a (click)="select('')">Select all</a></li>
         <li *ngFor="let option of options">
             <a (click)="select(option)">
                 {{ option }}
