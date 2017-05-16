@@ -4,14 +4,14 @@
   "description": "Angular 2 port of the original Angular Phonecat application with Webpack",
   "main": "src/app/main.js",
   "scripts": {
-    "postinstall": "ng-install",
-    "build": "ng-build",
-    "deploy": "ng-deploy",
-    "lint": "ng-lint",
-    "start": "ng-start",
+    "postinstall": "ngx-install",
+    "build": "ngx-build",
+    "deploy": "ngx-deploy",
+    "lint": "ngx-lint",
+    "start": "ngx-start",
     "start-prod": "http-server ./dist -p 4000",
-    "test": "ng-test",
-    "test-watch": "ng-test --watch"
+    "test": "ngx-test",
+    "test-watch": "ngx-test --watch"
   },
   "author": {
     "name": "blacksonic",
@@ -46,7 +46,7 @@
     "zone.js": "0.8.10"
   },
   "devDependencies": {
-    "ngx-webpack": "4.0.1",
+    "@ngx-webpack/cli": "0.0.2",
     "http-server": "0.10.0"
   }
 }
