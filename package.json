@@ -46,7 +46,7 @@
     "zone.js": "0.8.10"
   },
   "devDependencies": {
-    "@ngx-webpack/cli": "0.0.2",
+    "@ngx-webpack/cli": "0.0.3",
     "http-server": "0.10.0"
   }
 }
