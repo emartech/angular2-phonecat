@@ -6,3 +6,4 @@ dll
 *.ngfactory.ts
 *.ngstyle.ts
 *.ngsummary.json
+package-lock.json
